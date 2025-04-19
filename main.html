@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropical Escape Resort</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div id="mainContent">
+  <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms1">Rooms</a></li>
+            <li><a href="#specialities">Specialities</a></li>
+            <li><a href="#spots">Attractions</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+            <li id="openLogin" class="btn-grad"><a href="#login">Login</a></li>
+            <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+        </ul>
+    </nav>
+
+  <header id="home">
+    <div class="hero-text">
+      <h1 data-aos="fade-up">Tropical Escape Resort</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Luxury, comfort & adventure in paradise</p>
+      <a href="#book" class="btn" data-aos="zoom-in" data-aos-delay="400">Book Now</a>
+    </div>
+  </header>
+
+  <section id="rooms1" class="fade-section1">
+    <h2 class="section-title">Our Rooms</h2>
+    <div class="slider-container1" data-aos="fade-up">
+      <div class="slider1">
+        <div class="slider-item1">
+          <img src="pic1.1.jpg" alt="Room 1">
+        </div>
+        <div class="slider-item1">
+          <img src="pic1.2.jpg" alt="Room 2">
+        </div>
+        <div class="slider-item1">
+          <img src="pic1.4.jpg" alt="Room 3">
+        </div>
+        <div class="slider-item1">
+          <img src="pic1.3.jpg" alt="Room 4">
+        </div>
+        <div class="slider-item1">
+          <img src="pic8.jpg" alt="Room 5">
+        </div>
+        <div class="slider-item1">
+          <img src="img7.png" alt="Room 6">
+        </div>
+        <div class="slider-item1">
+          <img src="img8.png" alt="Room 7">
+        </div>
+        <div class="slider-item1">
+          <img src="pic5.jpg" alt="Room 8">
+        </div>
+        <div class="slider-item1">
+          <img src="img10.png" alt="Room 9">
+        </div>
+        <div class="slider-item1">
+          <img src="img6.png" alt="Room 10">
+        </div>
+      </div>
+      <div class="slider-controls1">
+        <button class="prev1">&#10094;</button>
+        <button class="next1">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="specialities" class="fade-section">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="card-container">
+      <div class="card" data-aos="fade-up">
+        <img src="spa.jpg" alt="Spa">
+        <h3>Spa & Wellness</h3>
+        <p>Relax in our world-class spa with exotic treatments.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="fine.jpg" alt="Fine Dining">
+        <h3>Fine Dining</h3>
+        <p>Enjoy cuisine from around the world at our gourmet restaurant.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <img src="adventure.jpg" alt="Adventure">
+        <h3>Adventure Activities</h3>
+        <p>Scuba diving, trekking, kayaking and more await you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="spots" class="fade-section">
+    <h2 class="section-title">Nearby Attractions</h2>
+    <div class="card-container">
+      <div class="card" data-aos="fade-up">
+        <img src="sunset.jpg" alt="Sunset Beach">
+        <h3>Sunset Beach</h3>
+        <p>Famous for its golden sand and vibrant sunsets.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="img12.png" alt="Crystal Falls">
+        <h3>Crystal Falls</h3>
+        <p>A scenic waterfall just 15 minutes away.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <img src="mount.jpg" alt="Mount Serenity Trail">
+        <h3>Mount Serenity Trail</h3>
+        <p>Perfect for sunrise hikes and nature photography.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2 class="section-title">Book Your Stay</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <label>Check-in: <input type="date" required /></label>
+      <label>Check-out: <input type="date" required /></label>
+
+      <h3>Room Type:</h3>
+      <div class="room-selection">
+        <label class="room-option">
+          <input type="radio" name="room-type" value="single" required />
+          <img src="pic3.jpg" alt="Single Room">
+          <p>Single Room</p>
+        </label>
+        <label class="room-option">
+          <input type="radio" name="room-type" value="double" />
+          <img src="pic7.jpg" alt="Double Room">
+          <p>Double Room</p>
+        </label>
+        <label class="room-option">
+          <input type="radio" name="room-type" value="suite" />
+          <img src="pic6.jpg" alt="Suite">
+          <p>Suite</p>
+        </label>
+        <label class="room-option">
+          <input type="radio" name="room-type" value="family" />
+          <img src="img4.png" alt="Family Room">
+          <p>Family Room</p>
+        </label>
+      </div>
+      
+      <textarea rows="4" placeholder="Special requests or details"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <section id="contact-us">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-details">
+        <h3>Get in Touch</h3>
+        <p><strong>Address:</strong> 123 Paradise Lane, Beachside, Sunnyland 456789</p>
+        <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+        <p><strong>Email:</strong> info@tropicalescape.com</p>
+        <p><strong>Working Hours:</strong> 8:00 AM – 10:00 PM (Mon-Sun)</p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019951931798!2d-122.41941508468165!3d37.77492927975817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581552b5a773d%3A0xc853b0a61c939b41!2s123%20Paradise%20Lane!5e0!3m2!1sen!2sus!4v1680190812345!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  </div>
+  
+  
+  
+  <div id="loginModal" class="modal-overlay">
+    <div class="login-modal-content">
+        <div class="body-container">
+          <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#" class="form1">
+                    <h1 class="myh1">Join Paradise</h1>
+                    <input type="text" placeholder="Your Name" class="input1"/>
+                    <input type="email" placeholder="Email Address" class="input1" />
+                    <input type="password" placeholder="Create Password" class="input1" />
+                    <div class="btn1-grad">Start Vacation</div>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#" class="form1">
+                    <h1 class="myh1">Welcome Back</h1>
+                    <input type="email" placeholder="Email Address" class="input1" />
+                    <input type="password" placeholder="Enter Password" class="input1" />
+                    <a href="#" class="a1">Forgot your password?</a>
+                    <div class="btn1-grad">Continue</div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="myh1">Glad You're Back!</h1>
+                        <p class="p1">Sign in and explore your next tropical escape.</p>
+                        <div class="btn1-grad" id="signIn">Sign In</div>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="myh1">Hello, Explorer!</h1>
+                        <p class="p1">Sign up to start your dream vacation today.</p>
+                        <div class="btn1-grad" id="signUp">Sign Up</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+ 
+
+
+  </div>
+  <footer>
+    <p>&copy; 2025 Tropical Escape Resort </p>
+  </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  // Remove this if you are no longer using AOS animations
+  AOS.init();
+</script>
+
+<script>
+    let currentIndex = 0;
+    const slider = document.querySelector('.slider1');
+    const totalSlides = document.querySelectorAll('.slider-item1').length;
+  
+    // Function to move to the next slide
+    function nextSlide() {
+      if (currentIndex < totalSlides - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0; // Loop back to the first slide
+      }
+      updateSliderPosition();
+    }
+  
+    // Function to move to the previous slide
+    function prevSlide() {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = totalSlides - 1; // Loop back to the last slide
+      }
+      updateSliderPosition();
+    }
+  
+    // Update the slider position based on the current index
+    function updateSliderPosition() {
+      const offset = -currentIndex * 100; // Each slide takes 100% width
+      slider.style.transform = `translateX(${offset}%)`;
+    }
+  
+    // Event listeners for next and prev buttons
+    document.querySelector('.next1').addEventListener('click', nextSlide);
+    document.querySelector('.prev1').addEventListener('click', prevSlide);
+  
+    // Auto slide every 5 seconds
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  </script>
+    <script>
+      const signUpBtn = document.getElementById('signUp');
+      const signInBtn = document.getElementById('signIn');
+      const container = document.getElementById('container');
+
+      signUpBtn.addEventListener('click', () => {
+          container.classList.add('right-panel-active');
+      });
+
+      signInBtn.addEventListener('click', () => {
+          container.classList.remove('right-panel-active');
+      });
+  </script>
+  <script>
+    // Booking Form Submission Handler
+    document.querySelector(".contact-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent page reload
+    
+      const name = this.querySelector('input[type="text"]').value;
+      const email = this.querySelector('input[type="email"]').value;
+      const checkIn = this.querySelectorAll('input[type="date"]')[0].value;
+      const checkOut = this.querySelectorAll('input[type="date"]')[1].value;
+      const roomType = this.querySelector('input[name="room-type"]:checked')?.value;
+      const specialRequests = this.querySelector("textarea").value;
+    
+      if (!roomType) {
+        alert("Please select a room type.");
+        return;
+      }
+    
+      // Format booking summary
+      const bookingSummary = `
+    📋 Booking Summary:
+    -----------------------------
+    👤 Name: ${name}
+    📧 Email: ${email}
+    📅 Check-In: ${checkIn}
+    📅 Check-Out: ${checkOut}
+    🛏️ Room Type: ${roomType.charAt(0).toUpperCase() + roomType.slice(1)}
+    📝 Special Requests: ${specialRequests || "None"}
+    -----------------------------
+    ✅ Thank you for booking with Paradise!
+      `;
+    
+      alert(bookingSummary);
+      console.log(bookingSummary); // Also log it to console for debugging
+    
+      this.reset();
+    });
+    
+    // Modal Toggle Functionality
+    document.getElementById("signIn").addEventListener("click", () => {
+      document.getElementById("container").classList.remove("right-panel-active");
+    });
+    
+    document.getElementById("signUp").addEventListener("click", () => {
+      document.getElementById("container").classList.add("right-panel-active");
+    });
+    
+    // Optional: Show/Hide Modal
+    function showLoginModal() {
+      document.getElementById("loginModal").style.display = "flex";
+    }
+    function hideLoginModal() {
+      document.getElementById("loginModal").style.display = "none";
+    }
+    
+    // Optional: Close modal on clicking outside
+    window.addEventListener("click", function (e) {
+      const modal = document.getElementById("loginModal");
+      if (e.target === modal) {
+        hideLoginModal();
+      }
+    });
+    </script>
+    
+</body>
+</html>
